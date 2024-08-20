@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the ant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="controls">
+        <label for="grid-size">Grid size:</label>
+        <select id="grid-size">
+            <option value="8x8">8x8</option>
+            <!-- Add other sizes as needed -->
+        </select>
+
+        <label for="points-win">Points to win:</label>
+        <select id="points-win">
+            <option value="20">20 pts</option>
+            <!-- Add other options as needed -->
+        </select>
+
+        <label for="points-lose">Points to lose:</label>
+        <select id="points-lose">
+            <option value="10">10 pts</option>
+            <!-- Add other options as needed -->
+        </select>
+
+        <label for="sound-toggle">Sound on:</label>
+        <input type="checkbox" id="sound-toggle" checked>
+    </div>
+
+    <div class="scoreboard">
+        <div>Catch: <span id="catch-score">0</span></div>
+        <div>Miss: <span id="miss-score">0</span></div>
+    </div>
+
+    <div id="game-grid" class="grid">
+        <!-- Grid cells will be dynamically generated here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
